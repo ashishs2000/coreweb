@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Core.Api", "Neogov.Core.Api\Neogov.Core.Api.csproj", "{DFDA91D1-DF94-4272-B570-B9752C13988C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_BoundedContexts", "1_BoundedContexts", "{F041A75F-7BC8-44BA-80D6-60904717BCC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Administration", "3_Administration", "{829A52BE-4AE2-428C-BF59-EAA8D7790487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Administration.Core", "Neogov.Core.Domain\Neogov.Administration.Core.csproj", "{49A901BE-D5F6-4E24-9A77-5097C67555FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Shared", "1_Shared", "{CBDB8042-98A4-4A54-8BE3-4B6C1871EFFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Administration.Core.Tests", "Neogov.Core.Domain.Tests\Neogov.Administration.Core.Tests.csproj", "{5BD705D0-6389-42E0-9951-E5CF4EF3AA74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Administration.Core.Infrastructure", "Neogov.Core.Domain.Infrastructure\Neogov.Administration.Core.Infrastructure.csproj", "{BE095A74-1450-4F17-906A-894DE1742968}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Web", "3_Web", "{DCEF4AEE-5C8C-4A45-8E9C-344C7459E9E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Api", "2_Api", "{EEF02719-51E2-42CF-81E7-9B484C692AD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Administration.Core.Infrastructure.Tests", "Neogov.Administration.Core.Infrastructure.Tests\Neogov.Administration.Core.Infrastructure.Tests.csproj", "{ED9221A5-EF63-4405-A325-B27F3E0BAAFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Core.Common", "Neogov.Core.Common\Neogov.Core.Common.csproj", "{2C740E44-19C1-4FCC-8379-28DE8B1F0B5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Core.Common.Infrastructure", "Neogov.Core.Common.Infrastructure\Neogov.Core.Common.Infrastructure.csproj", "{CACACE15-3D29-4EA9-9F44-B2ECBA0BE7E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_ReadOnly", "2_ReadOnly", "{B9CFF755-EB93-4329-8B4C-787AD7AE74E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Core.Resources", "Neogov.Core.Resources\Neogov.Core.Resources.csproj", "{90F0E880-CB62-4361-BCAB-89B712E5F0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neogov.Core.Query", "Neogov.Core.Query\Neogov.Core.Query.csproj", "{5FAD6AEB-17CC-442B-964E-5DC6EDB2975B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "web", "web\", "{EDD691B0-DF0A-4A0E-BBAF-0D65504DB3B5}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_30010"
+		Debug.AspNetCompiler.PhysicalPath = "web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_30010\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_30010"
+		Release.AspNetCompiler.PhysicalPath = "web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_30010\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "30010"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFDA91D1-DF94-4272-B570-B9752C13988C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFDA91D1-DF94-4272-B570-B9752C13988C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFDA91D1-DF94-4272-B570-B9752C13988C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFDA91D1-DF94-4272-B570-B9752C13988C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A901BE-D5F6-4E24-9A77-5097C67555FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A901BE-D5F6-4E24-9A77-5097C67555FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A901BE-D5F6-4E24-9A77-5097C67555FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A901BE-D5F6-4E24-9A77-5097C67555FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD705D0-6389-42E0-9951-E5CF4EF3AA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD705D0-6389-42E0-9951-E5CF4EF3AA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD705D0-6389-42E0-9951-E5CF4EF3AA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD705D0-6389-42E0-9951-E5CF4EF3AA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE095A74-1450-4F17-906A-894DE1742968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE095A74-1450-4F17-906A-894DE1742968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE095A74-1450-4F17-906A-894DE1742968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE095A74-1450-4F17-906A-894DE1742968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9221A5-EF63-4405-A325-B27F3E0BAAFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9221A5-EF63-4405-A325-B27F3E0BAAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9221A5-EF63-4405-A325-B27F3E0BAAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9221A5-EF63-4405-A325-B27F3E0BAAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C740E44-19C1-4FCC-8379-28DE8B1F0B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C740E44-19C1-4FCC-8379-28DE8B1F0B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C740E44-19C1-4FCC-8379-28DE8B1F0B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C740E44-19C1-4FCC-8379-28DE8B1F0B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACACE15-3D29-4EA9-9F44-B2ECBA0BE7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACACE15-3D29-4EA9-9F44-B2ECBA0BE7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACACE15-3D29-4EA9-9F44-B2ECBA0BE7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACACE15-3D29-4EA9-9F44-B2ECBA0BE7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F0E880-CB62-4361-BCAB-89B712E5F0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F0E880-CB62-4361-BCAB-89B712E5F0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F0E880-CB62-4361-BCAB-89B712E5F0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F0E880-CB62-4361-BCAB-89B712E5F0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FAD6AEB-17CC-442B-964E-5DC6EDB2975B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FAD6AEB-17CC-442B-964E-5DC6EDB2975B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FAD6AEB-17CC-442B-964E-5DC6EDB2975B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FAD6AEB-17CC-442B-964E-5DC6EDB2975B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD691B0-DF0A-4A0E-BBAF-0D65504DB3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD691B0-DF0A-4A0E-BBAF-0D65504DB3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD691B0-DF0A-4A0E-BBAF-0D65504DB3B5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD691B0-DF0A-4A0E-BBAF-0D65504DB3B5}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DFDA91D1-DF94-4272-B570-B9752C13988C} = {EEF02719-51E2-42CF-81E7-9B484C692AD3}
+		{829A52BE-4AE2-428C-BF59-EAA8D7790487} = {F041A75F-7BC8-44BA-80D6-60904717BCC4}
+		{49A901BE-D5F6-4E24-9A77-5097C67555FE} = {829A52BE-4AE2-428C-BF59-EAA8D7790487}
+		{CBDB8042-98A4-4A54-8BE3-4B6C1871EFFC} = {F041A75F-7BC8-44BA-80D6-60904717BCC4}
+		{5BD705D0-6389-42E0-9951-E5CF4EF3AA74} = {829A52BE-4AE2-428C-BF59-EAA8D7790487}
+		{BE095A74-1450-4F17-906A-894DE1742968} = {829A52BE-4AE2-428C-BF59-EAA8D7790487}
+		{ED9221A5-EF63-4405-A325-B27F3E0BAAFA} = {829A52BE-4AE2-428C-BF59-EAA8D7790487}
+		{2C740E44-19C1-4FCC-8379-28DE8B1F0B5F} = {CBDB8042-98A4-4A54-8BE3-4B6C1871EFFC}
+		{CACACE15-3D29-4EA9-9F44-B2ECBA0BE7E7} = {CBDB8042-98A4-4A54-8BE3-4B6C1871EFFC}
+		{B9CFF755-EB93-4329-8B4C-787AD7AE74E8} = {F041A75F-7BC8-44BA-80D6-60904717BCC4}
+		{90F0E880-CB62-4361-BCAB-89B712E5F0D3} = {CBDB8042-98A4-4A54-8BE3-4B6C1871EFFC}
+		{5FAD6AEB-17CC-442B-964E-5DC6EDB2975B} = {B9CFF755-EB93-4329-8B4C-787AD7AE74E8}
+		{EDD691B0-DF0A-4A0E-BBAF-0D65504DB3B5} = {DCEF4AEE-5C8C-4A45-8E9C-344C7459E9E5}
+	EndGlobalSection
+EndGlobal
