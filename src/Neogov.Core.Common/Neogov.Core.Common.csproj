@@ -64,7 +64,7 @@
     <Compile Include="Events\Context\DomainEventContext.cs" />
     <Compile Include="Events\Dispatchers\AutofacEventDispatcher.cs" />
     <Compile Include="Events\Dispatchers\NullEventDispatcher.cs" />
-    <Compile Include="Events\DomainEvent.cs" />
+    <Compile Include="Events\DomainEventManager.cs" />
     <Compile Include="Events\Employee\EmployeeCreated.cs" />
     <Compile Include="Events\IDomainEvent.cs" />
     <Compile Include="Events\IDomainEventHandler.cs" />

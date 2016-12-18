@@ -40,7 +40,7 @@ namespace Neogov.Administration.Core.DomainModels
         internal Employee(EmployeeCommand employee)
         {
             ApplyAndValidateCommand(employee);
-            DomainEvent.Raise(()=>new EmployeeCreated(()=> EntityId));
+            DomainEventManager.Raise(()=>new EmployeeCreated(()=> EntityId));
         }
 
         internal void Update(EmployeeCommand employee)
@@ -50,9 +50,9 @@ namespace Neogov.Administration.Core.DomainModels
 
         private void ApplyAndValidateCommand(EmployeeCommand command)
         {
-            DomainEvent.Raise(() => new EmployeeManagerChanged(() => EntityId, ManagerId, command.ManagerId), ManagerId != command.ManagerId);
-            DomainEvent.Raise(() => new EmployeeDeactivated(() => EntityId), IsActive && !command.IsActive);
-            DomainEvent.Raise(() => new EmployeePositionChanged(() => EntityId, PositionId,command.PositionId), PositionId != command.PositionId);
+            DomainEventManager.Raise(() => new EmployeeManagerChanged(() => EntityId, ManagerId, command.ManagerId), ManagerId != command.ManagerId);
+            DomainEventManager.Raise(() => new EmployeeDeactivated(() => EntityId), IsActive && !command.IsActive);
+            DomainEventManager.Raise(() => new EmployeePositionChanged(() => EntityId, PositionId,command.PositionId), PositionId != command.PositionId);
 
             FirstName = command.FirstName;
             LastName = command.LastName;

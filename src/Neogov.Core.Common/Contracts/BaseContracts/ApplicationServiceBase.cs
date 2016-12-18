@@ -26,7 +26,7 @@ namespace Neogov.Core.Common.Contracts.BaseContracts
             if (this.Dispatcher == null)
                 throw new ApplicationException("Event dispatcher should be initialized before calling Application service methods!");
 
-            DomainEvent.CreateContext(this.Dispatcher);
+            DomainEventManager.CreateContext(this.Dispatcher);
         }
 
         public virtual void AfterMethodExecuted(MethodInfo methodInfo, IMethodCallMessage message, object methodResult)
@@ -34,16 +34,16 @@ namespace Neogov.Core.Common.Contracts.BaseContracts
             var result = (methodResult as Result);
             if (result == null || result.IsSuccess)
             {
-                DomainEvent.Context.Dispatch();
+                DomainEventManager.Context.Dispatch();
             }
 
-            DomainEvent.Context.Dispose();
+            DomainEventManager.Context.Dispose();
         }
 
         public virtual void AfterExceptionOccurred(Exception exception, MethodInfo methodInfo)
         {
-            if (DomainEvent.Context != null)
-                DomainEvent.Context.Dispose();
+            if (DomainEventManager.Context != null)
+                DomainEventManager.Context.Dispose();
 
             Log.Exception(exception);
         }

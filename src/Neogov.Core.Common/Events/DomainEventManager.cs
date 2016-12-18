@@ -5,7 +5,7 @@ using Neogov.Core.Common.Events.Dispatchers;
 
 namespace Neogov.Core.Common.Events
 {
-    public static class DomainEvent
+    public static class DomainEventManager
     {
         private const string DomainEventContextName = "DomainEventContext";
 
