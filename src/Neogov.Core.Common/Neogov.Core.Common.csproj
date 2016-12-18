@@ -49,6 +49,7 @@
     <Compile Include="Contracts\BaseContracts\BaseDomainModel.cs" />
     <Compile Include="Contracts\BaseContracts\ValueObject.cs" />
     <Compile Include="Contracts\Interfaces\IAggregateRoot.cs" />
+    <Compile Include="Contracts\Interfaces\ITransaction.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="ValueObjects\Address.cs" />
     <Compile Include="CustomAttributes\AllowInReadOnlyModeAttribute.cs" />
